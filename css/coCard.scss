@@ -8,9 +8,7 @@ $primary_color: #815ba9;
 $primary_light_color: #e0cff3;
 $secondary_color: #ab886d;
 $secondary_light_color: #eed7b5;
-$secondary_light_light_color: #f0dab8;
-$secondary_light_light_light_color:#ffeccb;
-// $secondary_deep_color: #845228;
+$secondary_light_light_color: #eddcca;
 $secondary_deep_color: #a37a5d;
 
 
@@ -382,9 +380,12 @@ header {
 	}
 }
 .example{
-	background-color: $primary_color;
+	background-color: $secondary_light_light_color;
 	.tit_maintitle{
-		color: $white_color;
+		color: $primary_color;
+		span{
+			color: $secondary_deep_color;
+		}
 	}
 	.wrap{
 		margin: 5rem auto 0 auto;
@@ -392,7 +393,7 @@ header {
 	&_content {
 		width: 1024px;
 		p{
-			background-color: rgba(0, 0, 0, 0.1); 
+			background-color: rgba(163, 122, 93, 0.7); 
   			color: $white_color;
 			padding: 2rem 4rem;
 			line-height: 1.6;
@@ -405,9 +406,20 @@ header {
 			padding: 50px;
 			ul {
 				margin: 0 50px;
-				li{
-					color: $white_color;
+				ol{
 					font-size: 1.5rem;
+					color: $secondary_deep_color;
+					margin-bottom: 20px;
+					border-bottom: 1px solid $secondary_deep_color;
+					display: inline-block;
+				}
+				li{
+					color: $secondary_deep_color;
+					font-size: 1.25rem;
+					span{
+						color: $primary_color;
+						font-weight: 900;
+					}
 				}
 			}
 		}

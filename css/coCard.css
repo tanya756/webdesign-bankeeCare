@@ -423,10 +423,13 @@ header a img {
 }
 
 .example {
-  background-color: #815ba9;
+  background-color: #eddcca;
 }
 .example .tit_maintitle {
-  color: #fff;
+  color: #815ba9;
+}
+.example .tit_maintitle span {
+  color: #a37a5d;
 }
 .example .wrap {
   margin: 5rem auto 0 auto;
@@ -435,7 +438,7 @@ header a img {
   width: 1024px;
 }
 .example_content p {
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: rgba(163, 122, 93, 0.7);
   color: #fff;
   padding: 2rem 4rem;
   line-height: 1.6;
@@ -456,9 +459,20 @@ header a img {
 .example_content .box ul {
   margin: 0 50px;
 }
-.example_content .box ul li {
-  color: #fff;
+.example_content .box ul ol {
   font-size: 1.5rem;
+  color: #a37a5d;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #a37a5d;
+  display: inline-block;
+}
+.example_content .box ul li {
+  color: #a37a5d;
+  font-size: 1.25rem;
+}
+.example_content .box ul li span {
+  color: #815ba9;
+  font-weight: 900;
 }
 @media (max-width: 1024px) {
   .example_content {
@@ -680,7 +694,7 @@ header a img {
 }
 
 .line {
-  background-color: #f0dab8;
+  background-color: #eddcca;
 }
 .line_content {
   display: -webkit-box;
